@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css"  href="/login.css">
+</head>
+<body>
+	style{
+	background: red;
+	}
+	<%- include("partials/nav") %>
+	
+	<form  action="/user" method="POST" style="width:400px; margin: 200px auto; padding-bottom: 6em;">
+		<div class="ui form container segment inverted">
+			<div class="field">
+			<label>Username</label>
+			<input type="text" name="name" placeholder="Username">
+		</div>
+		<div class="field">
+			<label>Password</label>
+			<input type="text" name="password"placeholder="Username">
+		</div>
+		<div class="field">
+		</div>
+		 <button class="ui inverted primary button">Login</button>
+		</div>
+	</form>
+
+	
+</body>
+</html>
